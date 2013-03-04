@@ -1,6 +1,8 @@
 class Person < ActiveRecord::Base
-    belongs_to :Gymnasium, inverse_of :Person
+    belongs_to :gymnasium, inverse_of :person
     belongs_to :Location
-    
-  attr_accessible : Name, :Age, :Height, :Location, :Sex, :WODsTakenPartIn, :Weight
+    validates :Name, :Age, :Height, :Location, :Sex, :WODsTakenPartIn, :Weight, :presence=>true
+    validates :Age, :numericality=>{:greater_than_or_equal_to=>13}
+    validates :Name, :uniqueness=>true
+  attr_accessible :Name, :Age, :Height, :Location, :Sex, :WODsTakenPartIn, :Weight
 end
