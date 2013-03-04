@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+   Name: MyString
+  Repetitions: 1
+  WeightAmount: 1
+  TimeAlotted: 2013-03-04 17:00:13
+  NumberOfDaysPerWeek: 1
+
+two:
+   Name: MyString
+  Repetitions: 1
+  WeightAmount: 1
+  TimeAlotted: 2013-03-04 17:00:13
+  NumberOfDaysPerWeek: 1

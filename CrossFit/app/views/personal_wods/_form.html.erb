@@ -1,0 +1,41 @@
+<%= form_for(@personal_wod) do |f| %>
+  <% if @personal_wod.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@personal_wod.errors.count, "error") %> prohibited this personal_wod from being saved:</h2>
+
+      <ul>
+      <% @personal_wod.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label : Name %><br />
+    <%= f.text_field : Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Repetitions %><br />
+    <%= f.number_field :Repetitions %>
+  </div>
+  <div class="field">
+    <%= f.label :WeightAmount %><br />
+    <%= f.number_field :WeightAmount %>
+  </div>
+  <div class="field">
+    <%= f.label :TimeTaken %><br />
+    <%= f.text_field :TimeTaken %>
+  </div>
+  <div class="field">
+    <%= f.label :NumberOfDaysPerWeek %><br />
+    <%= f.number_field :NumberOfDaysPerWeek %>
+  </div>
+  <div class="field">
+    <%= f.label :PersonalBest %><br />
+    <%= f.text_field :PersonalBest %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

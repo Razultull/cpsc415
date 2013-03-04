@@ -1,0 +1,33 @@
+<%= form_for(@gymnasium) do |f| %>
+  <% if @gymnasium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gymnasium.errors.count, "error") %> prohibited this gymnasium from being saved:</h2>
+
+      <ul>
+      <% @gymnasium.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label : Name %><br />
+    <%= f.text_field : Name %>
+  </div>
+  <div class="field">
+    <%= f.label :StreetAddress %><br />
+    <%= f.text_field :StreetAddress %>
+  </div>
+  <div class="field">
+    <%= f.label :Town %><br />
+    <%= f.text_field :Town %>
+  </div>
+  <div class="field">
+    <%= f.label :City %><br />
+    <%= f.text_field :City %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

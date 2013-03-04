@@ -1,0 +1,37 @@
+<%= form_for(@wod) do |f| %>
+  <% if @wod.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wod.errors.count, "error") %> prohibited this wod from being saved:</h2>
+
+      <ul>
+      <% @wod.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label : Name %><br />
+    <%= f.text_field : Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Repetitions %><br />
+    <%= f.number_field :Repetitions %>
+  </div>
+  <div class="field">
+    <%= f.label :WeightAmount %><br />
+    <%= f.number_field :WeightAmount %>
+  </div>
+  <div class="field">
+    <%= f.label :TimeAlotted %><br />
+    <%= f.time_select :TimeAlotted %>
+  </div>
+  <div class="field">
+    <%= f.label :NumberOfDaysPerWeek %><br />
+    <%= f.number_field :NumberOfDaysPerWeek %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

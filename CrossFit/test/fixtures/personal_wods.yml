@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+   Name: MyString
+  Repetitions: 1
+  WeightAmount: 1
+  TimeTaken: MyString
+  NumberOfDaysPerWeek: 1
+  PersonalBest: MyString
+
+two:
+   Name: MyString
+  Repetitions: 1
+  WeightAmount: 1
+  TimeTaken: MyString
+  NumberOfDaysPerWeek: 1
+  PersonalBest: MyString

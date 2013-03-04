@@ -1,0 +1,29 @@
+<h1>Listing gymnasia</h1>
+
+<table>
+  <tr>
+    <th> name</th>
+    <th>Streetaddress</th>
+    <th>Town</th>
+    <th>City</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gymnasia.each do |gymnasium| %>
+  <tr>
+    <td><%= gymnasium. Name %></td>
+    <td><%= gymnasium.StreetAddress %></td>
+    <td><%= gymnasium.Town %></td>
+    <td><%= gymnasium.City %></td>
+    <td><%= link_to 'Show', gymnasium %></td>
+    <td><%= link_to 'Edit', edit_gymnasium_path(gymnasium) %></td>
+    <td><%= link_to 'Destroy', gymnasium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gymnasium', new_gymnasium_path %>
