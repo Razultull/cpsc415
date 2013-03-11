@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-CrossFit::Application.config.secret_token = '238c56d4969dd4766f8e2bcf1a295b6eac1cc7c2d5c25325bb5ea3d8f9f5d68fae1d3cf1907b7ffc653545b41658101af28089fa51129e893bc270c17701d00e'
+CrossFit::Application.config.secret_token = 'f2741c050142959e223585c89c3617e9aa7fb319f1e3cfe3a220ce1657e5b88b071f17a3693eae402af47c3eb6aa892ac88ee33a5e0955a4f5ac555f616ed316'

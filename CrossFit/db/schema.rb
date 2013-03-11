@@ -11,46 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130304220336) do
+ActiveRecord::Schema.define(:version => 20130311211110) do
 
   create_table "gymnasia", :force => true do |t|
-    t.string   "Name",            :null => false
-    t.string   "NumberAndStreet", :null => false
-    t.string   "Town",            :null => false
-    t.string   "City",            :null => false
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.string   "Name"
+    t.string   "StreetAddress"
+    t.string   "City"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "people", :force => true do |t|
     t.string   "Name"
-    t.string   "Height"
-    t.string   "Weight"
-    t.integer  "Age"
+    t.date     "DateOfBirth"
     t.string   "Sex"
-    t.string   "WODsTakenPartIn"
-    t.string   "Location"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.string   "Address"
+    t.integer  "Height"
+    t.integer  "Weight"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
-  create_table "personal_wods", :force => true do |t|
-    t.string   "Name",                :null => false
-    t.integer  "Repetitions",         :null => false
-    t.integer  "WeightAmount",        :null => false
-    t.string   "TimeTaken",           :null => false
-    t.integer  "NumberOfDaysPerWeek", :null => false
-    t.string   "PersonalBest",        :null => false
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
-  end
-
-  create_table "wods", :force => true do |t|
+  create_table "wo_ds", :force => true do |t|
     t.string   "Name"
-    t.integer  "Repetitions"
-    t.integer  "WeightAmount"
-    t.time     "TimeAlotted"
+    t.string   "TimeNeeded"
     t.integer  "NumberOfDaysPerWeek"
+    t.integer  "NumberOfExercises"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
   end

@@ -18,7 +18,7 @@ class GymnasiaControllerTest < ActionController::TestCase
 
   test "should create gymnasium" do
     assert_difference('Gymnasium.count') do
-      post :create, gymnasium: {  Name: @gymnasium. Name, City: @gymnasium.City, StreetAddress: @gymnasium.StreetAddress, Town: @gymnasium.Town }
+      post :create, gymnasium: { City: @gymnasium.City, Name: @gymnasium.Name, StreetAddress: @gymnasium.StreetAddress }
     end
 
     assert_redirected_to gymnasium_path(assigns(:gymnasium))
@@ -35,7 +35,7 @@ class GymnasiaControllerTest < ActionController::TestCase
   end
 
   test "should update gymnasium" do
-    put :update, id: @gymnasium, gymnasium: {  Name: @gymnasium. Name, City: @gymnasium.City, StreetAddress: @gymnasium.StreetAddress, Town: @gymnasium.Town }
+    put :update, id: @gymnasium, gymnasium: { City: @gymnasium.City, Name: @gymnasium.Name, StreetAddress: @gymnasium.StreetAddress }
     assert_redirected_to gymnasium_path(assigns(:gymnasium))
   end
 

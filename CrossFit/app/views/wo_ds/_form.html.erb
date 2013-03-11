@@ -1,0 +1,33 @@
+<%= form_for(@wo_d) do |f| %>
+  <% if @wo_d.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@wo_d.errors.count, "error") %> prohibited this wo_d from being saved:</h2>
+
+      <ul>
+      <% @wo_d.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :TimeNeeded %><br />
+    <%= f.text_field :TimeNeeded %>
+  </div>
+  <div class="field">
+    <%= f.label :NumberOfDaysPerWeek %><br />
+    <%= f.number_field :NumberOfDaysPerWeek %>
+  </div>
+  <div class="field">
+    <%= f.label :NumberOfExercises %><br />
+    <%= f.number_field :NumberOfExercises %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,11 +1,8 @@
 CrossFit::Application.routes.draw do
+  resources :wo_ds
+
+
   resources :gymnasia
-
-
-  resources :personal_wods
-
-
-  resources :wods
 
 
   resources :people

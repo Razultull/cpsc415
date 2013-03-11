@@ -2,9 +2,8 @@
 
 <table>
   <tr>
-    <th> name</th>
+    <th>Name</th>
     <th>Streetaddress</th>
-    <th>Town</th>
     <th>City</th>
     <th></th>
     <th></th>
@@ -13,9 +12,8 @@
 
 <% @gymnasia.each do |gymnasium| %>
   <tr>
-    <td><%= gymnasium. Name %></td>
+    <td><%= gymnasium.Name %></td>
     <td><%= gymnasium.StreetAddress %></td>
-    <td><%= gymnasium.Town %></td>
     <td><%= gymnasium.City %></td>
     <td><%= link_to 'Show', gymnasium %></td>
     <td><%= link_to 'Edit', edit_gymnasium_path(gymnasium) %></td>

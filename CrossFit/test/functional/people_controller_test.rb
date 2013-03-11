@@ -18,7 +18,7 @@ class PeopleControllerTest < ActionController::TestCase
 
   test "should create person" do
     assert_difference('Person.count') do
-      post :create, person: {  Name: @person. Name, Age: @person.Age, Height: @person.Height, Location: @person.Location, Sex: @person.Sex, WODsTakenPartIn: @person.WODsTakenPartIn, Weight: @person.Weight }
+      post :create, person: { Address: @person.Address, DateOfBirth: @person.DateOfBirth, Height: @person.Height, Name: @person.Name, Sex: @person.Sex, Weight: @person.Weight }
     end
 
     assert_redirected_to person_path(assigns(:person))
@@ -35,7 +35,7 @@ class PeopleControllerTest < ActionController::TestCase
   end
 
   test "should update person" do
-    put :update, id: @person, person: {  Name: @person. Name, Age: @person.Age, Height: @person.Height, Location: @person.Location, Sex: @person.Sex, WODsTakenPartIn: @person.WODsTakenPartIn, Weight: @person.Weight }
+    put :update, id: @person, person: { Address: @person.Address, DateOfBirth: @person.DateOfBirth, Height: @person.Height, Name: @person.Name, Sex: @person.Sex, Weight: @person.Weight }
     assert_redirected_to person_path(assigns(:person))
   end
 

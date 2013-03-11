@@ -12,32 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= f.label : Name %><br />
-    <%= f.text_field : Name %>
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
   </div>
   <div class="field">
-    <%= f.label :Height %><br />
-    <%= f.text_field :Height %>
-  </div>
-  <div class="field">
-    <%= f.label :Weight %><br />
-    <%= f.text_field :Weight %>
-  </div>
-  <div class="field">
-    <%= f.label :Age %><br />
-    <%= f.number_field :Age %>
+    <%= f.label :DateOfBirth %><br />
+    <%= f.date_select :DateOfBirth %>
   </div>
   <div class="field">
     <%= f.label :Sex %><br />
     <%= f.text_field :Sex %>
   </div>
   <div class="field">
-    <%= f.label :WODsTakenPartIn %><br />
-    <%= f.text_field :WODsTakenPartIn %>
+    <%= f.label :Address %><br />
+    <%= f.text_field :Address %>
   </div>
   <div class="field">
-    <%= f.label :Location %><br />
-    <%= f.text_field :Location %>
+    <%= f.label :Height %><br />
+    <%= f.number_field :Height %>
+  </div>
+  <div class="field">
+    <%= f.label :Weight %><br />
+    <%= f.number_field :Weight %>
   </div>
   <div class="actions">
     <%= f.submit %>

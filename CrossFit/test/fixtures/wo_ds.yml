@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  TimeNeeded: MyString
+  NumberOfDaysPerWeek: 1
+  NumberOfExercises: 1
+
+two:
+  Name: MyString
+  TimeNeeded: MyString
+  NumberOfDaysPerWeek: 1
+  NumberOfExercises: 1

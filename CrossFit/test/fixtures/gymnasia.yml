@@ -1,13 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-   Name: MyString
+  Name: MyString
   StreetAddress: MyString
-  Town: MyString
   City: MyString
 
 two:
-   Name: MyString
+  Name: MyString
   StreetAddress: MyString
-  Town: MyString
   City: MyString
