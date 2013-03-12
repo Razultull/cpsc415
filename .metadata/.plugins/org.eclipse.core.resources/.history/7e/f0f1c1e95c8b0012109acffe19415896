@@ -34,7 +34,7 @@ Gymnasium.create(:Name => "Gold's Gym",
 #---
 
 WoD.delete_all
-WoD.create(:Name => "Elliptical Burn", 
+Wod.create(:Name => "Elliptical Burn", 
            :NumberOfDaysPerWeek => 7, 
            :NumberOfExercises => 5,
            :TimeNeeded => "1 hour")

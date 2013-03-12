@@ -34,17 +34,17 @@ Gymnasium.create(:Name => "Gold's Gym",
 #---
 
 WoD.delete_all
-WoD.create(:Name => "Elliptical Burn", 
+Wod.create(:Name => "Elliptical Burn", 
            :NumberOfDaysPerWeek => 7, 
            :NumberOfExercises => 5,
            :TimeNeeded => "1 hour")
           
-WoD.create(:Name => "Fat Burner", 
+Wod.create(:Name => "Fat Burner", 
            :NumberOfDaysPerWeek => 5, 
            :NumberOfExercises => 7,
            :TimeNeeded => "90 Minutes")
 
-WoD.create(:Name => "Mega Man Abs", 
+Wod.create(:Name => "Mega Man Abs", 
            :NumberOfDaysPerWeek => 3, 
            :NumberOfExercises => 12,
            :TimeNeeded => "35 hour")

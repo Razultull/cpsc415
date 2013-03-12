@@ -1,29 +1,24 @@
-<h1>Listing wo_ds</h1>
+<div id="WoD_List">
+<h1>Listing WoDs(Workout Of The Day)</h1>
 
 <table>
-  <tr>
-    <th>Name</th>
-    <th>Timeneeded</th>
-    <th>Numberofdaysperweek</th>
-    <th>Numberofexercises</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <% @wo_ds.each do |wo_d| %>
+  	<tr class= "<%= cycle('list_line_odd', 'list_line_even') %>">
+  		<td><%= wo_d.Name %></td>
+    	<td><%= wo_d.TimeNeeded %></td>
+    	<td><%= wo_d.NumberOfDaysPerWeek %></td>
+    	<td><%= wo_d.NumberOfExercises %></td>
+    
+   			<td class="list_actions">
+   				<td><%= link_to 'Show', wo_d %></td>
+    			<td><%= link_to 'Edit', edit_wo_d_path(wo_d) %></td>
+    			<td><%= link_to 'Destroy', wo_d, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  			</td>
+  	</tr>
 
-<% @wo_ds.each do |wo_d| %>
-  <tr>
-    <td><%= wo_d.Name %></td>
-    <td><%= wo_d.TimeNeeded %></td>
-    <td><%= wo_d.NumberOfDaysPerWeek %></td>
-    <td><%= wo_d.NumberOfExercises %></td>
-    <td><%= link_to 'Show', wo_d %></td>
-    <td><%= link_to 'Edit', edit_wo_d_path(wo_d) %></td>
-    <td><%= link_to 'Destroy', wo_d, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
+ <% end %>
+ </table>
+</div>
 <br />
 
-<%= link_to 'New Wo d', new_wo_d_path %>
+<%= link_to 'New WoD', new_wo_d_path %>

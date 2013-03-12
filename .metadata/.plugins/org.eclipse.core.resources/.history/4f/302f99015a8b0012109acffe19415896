@@ -15,7 +15,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 # encoding: utf-8
-Gymnasium.delete_all
+Gymnasia.delete_all
 Gymnasium.create(:Name => "Gold's Gym",
   :StreetAddress => "23 Crazy Street",    
   :City => "Moscow")
@@ -27,24 +27,4 @@ Gymnasium.create(:Name => "Gold's Gym",
   Gymnasium.create(:Name => "Brian's",
   :StreetAddress => "1 Infinite Loop",    
   :City => "Cupertino")
-  
 
-#---
-#:Name, :NumberOfDaysPerWeek, :NumberOfExercises, :TimeNeeded
-#---
-
-WoD.delete_all
-WoD.create(:Name => "Elliptical Burn", 
-           :NumberOfDaysPerWeek => 7, 
-           :NumberOfExercises => 5,
-           :TimeNeeded => "1 hour")
-          
-WoD.create(:Name => "Fat Burner", 
-           :NumberOfDaysPerWeek => 5, 
-           :NumberOfExercises => 7,
-           :TimeNeeded => "90 Minutes")
-
-WoD.create(:Name => "Mega Man Abs", 
-           :NumberOfDaysPerWeek => 3, 
-           :NumberOfExercises => 12,
-           :TimeNeeded => "35 hour")

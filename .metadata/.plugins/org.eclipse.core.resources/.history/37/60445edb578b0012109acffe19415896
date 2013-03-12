@@ -11,17 +11,15 @@
     		<dd><%= gymnasium.StreetAddress %></td>
     		<dd><%= gymnasium.City %></td>
     	</dl>
-    </td>
+    	</td>
 
-    	<td class= "list_actions">
-    		<%= link_to 'Show', gymnasium %><br/>
-    		<%= link_to 'Edit', edit_gymnasium_path(gymnasium) %><br/>
-    		<%= link_to 'Destroy', gymnasium, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
-  		</td>
- </tr>
-
-	<% end %>
-	</table>
+    <td class= "list_actions">
+    	<%= link_to 'Show', gymnasium %><br/>
+    	<%= link_to 'Edit', edit_gymnasium_path(gymnasium) %><br/>
+    	<%= link_to 'Destroy', gymnasium, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
+  </tr>
+<% end %>
+</table>
 </div>
 <br />
 
