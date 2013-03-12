@@ -3,6 +3,5 @@ class Person < ActiveRecord::Base
   validates :Address, :DateOfBirth, :Height, :Name, :Sex, :Weight, :presence=>true
   validates :Name, :uniqueness=>true
   belongs_to :Gymnasium, inverse_of: :Person
-  has_many :wo_ds, inverse_of: :Person
   
 end
