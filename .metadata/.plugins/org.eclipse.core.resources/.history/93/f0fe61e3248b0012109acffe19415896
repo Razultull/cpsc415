@@ -4,7 +4,7 @@ class CreatePeople < ActiveRecord::Migration
       t.string :Name, :null=>false
       t.date :DateOfBirth, :null=>false
       t.string :Sex, :null=>false
-      t.string :Address
+      t.string :Address, :null=>false
       t.integer :Height, :null=>false
       t.integer :Weight, :null=>false
 

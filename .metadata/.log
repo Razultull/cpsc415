@@ -181,3 +181,48 @@ java.lang.UnsupportedOperationException: Not supported yet.
 	at com.aptana.index.core.IndexRequestJob.indexFileStores(IndexRequestJob.java:205)
 	at com.aptana.index.core.IndexContainerJob.run(IndexContainerJob.java:109)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.867
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.877
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected block on top of stack, but was: special_fun()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.877
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected method decl on top of stack, but was: Parser
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.877
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.878
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.894
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.894
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected block on top of stack, but was: special_fun()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.895
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected method decl on top of stack, but was: Parser
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.895
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.895
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.928
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.929
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected block on top of stack, but was: special_fun()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.930
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected method decl on top of stack, but was: Parser
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.931
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.931
+!MESSAGE (Build 3.3.1.201212171919) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.

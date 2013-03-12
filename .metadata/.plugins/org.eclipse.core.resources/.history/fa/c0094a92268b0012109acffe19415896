@@ -3,7 +3,6 @@ require 'test_helper'
 class WoDsControllerTest < ActionController::TestCase
   setup do
     @wo_d = wo_ds(:one)
-    @wo_d.Name = 'unqiue name'
   end
 
   test "should get index" do

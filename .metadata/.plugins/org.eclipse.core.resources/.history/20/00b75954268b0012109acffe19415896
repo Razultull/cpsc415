@@ -3,7 +3,6 @@ require 'test_helper'
 class GymnasiaControllerTest < ActionController::TestCase
   setup do
     @gymnasium = gymnasia(:one)
-    @gymnasium.Name = 'unique name'
   end
 
   test "should get index" do

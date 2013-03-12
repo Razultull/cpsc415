@@ -1,9 +1,9 @@
 class CreateGymnasia < ActiveRecord::Migration
   def change
     create_table :gymnasia do |t|
-      t.string :Name, :null=>false
-      t.string :StreetAddress, :null=>false
-      t.string :City, :null=>false
+      t.string :Name
+      t.string :StreetAddress
+      t.string :City
 
       t.timestamps
     end

@@ -3,7 +3,6 @@ require 'test_helper'
 class GymnasiaControllerTest < ActionController::TestCase
   setup do
     @gymnasium = gymnasia(:one)
-    @gymnasium.Name = 'unique name'
   end
 
   test "should get index" do
@@ -35,7 +34,6 @@ class GymnasiaControllerTest < ActionController::TestCase
     assert_response :success
   end
 
- 
   test "should update gymnasium" do
     put :update, id: @gymnasium, gymnasium: { City: @gymnasium.City, Name: @gymnasium.Name, StreetAddress: @gymnasium.StreetAddress }
     assert_redirected_to gymnasium_path(assigns(:gymnasium))
