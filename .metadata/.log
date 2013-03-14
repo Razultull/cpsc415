@@ -226,3 +226,13 @@ java.lang.UnsupportedOperationException: Not supported yet.
 
 !ENTRY com.aptana.ruby.core 4 0 2013-03-12 10:55:15.931
 !MESSAGE (Build 3.3.1.201212171919) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+!SESSION 2013-03-14 10:51:36.013 -----------------------------------------------
+eclipse.buildId=3.3.1.201212171919
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Rahul/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/Rahul/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-03-14 10:52:14.297
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

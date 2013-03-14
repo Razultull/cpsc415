@@ -16,7 +16,7 @@
         border-bottom: 3px dotted #77d;
 }
 
-/* Styles for WoD_List/index */
+/* Styles for products/index */
 
 #WoD_List table {
         border-collapse: collapse;

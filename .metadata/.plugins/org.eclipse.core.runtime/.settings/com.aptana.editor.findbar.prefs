@@ -1,0 +1,3 @@
+FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Tue Mar 12 17\:21\:09 EDT 2013\n1\=product_list\n0\=Gymnasia_List\n
+FIND_BAR_DECORATOR_REPLACE_ENTRIES=\#\n\#Tue Mar 12 17\:21\:09 EDT 2013\n1\=Gymnasia_List\n0\=WoD_List\n
+eclipse.preferences.version=1
