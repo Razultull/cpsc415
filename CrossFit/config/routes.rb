@@ -1,4 +1,6 @@
 CrossFit::Application.routes.draw do
+  devise_for :users
+
   resources :wo_ds
 
 
