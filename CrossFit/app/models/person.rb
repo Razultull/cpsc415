@@ -1,8 +1,3 @@
 class Person < ActiveRecord::Base
-  attr_accessible :Address, :DateOfBirth, :Height, :Name, :Sex, :Weight
-  validates :Address, :DateOfBirth, :Height, :Name, :Sex, :Weight, :presence=>true
-  validates :Name, :uniqueness=>true
-  belongs_to :Gymnasium, inverse_of: :Person
-  has_many :wo_ds, inverse_of: :Person
-  
+  attr_accessible :address, :date_of_birth, :height, :name, :sex, :weight
 end

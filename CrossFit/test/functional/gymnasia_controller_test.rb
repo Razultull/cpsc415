@@ -3,7 +3,7 @@ require 'test_helper'
 class GymnasiaControllerTest < ActionController::TestCase
   setup do
     @gymnasium = gymnasia(:one)
-    @gymnasium.Name = 'unique name'
+    @gymnasium.name = 'unique name'
   end
 
   test "should get index" do
@@ -19,7 +19,7 @@ class GymnasiaControllerTest < ActionController::TestCase
 
   test "should create gymnasium" do
     assert_difference('Gymnasium.count') do
-      post :create, gymnasium: { City: @gymnasium.City, Name: @gymnasium.Name, StreetAddress: @gymnasium.StreetAddress }
+      post :create, gymnasium: { city: @gymnasium.city, country: @gymnasium.country, name: @gymnasium.name, street_address: @gymnasium.street_address }
     end
 
     assert_redirected_to gymnasium_path(assigns(:gymnasium))
@@ -35,9 +35,8 @@ class GymnasiaControllerTest < ActionController::TestCase
     assert_response :success
   end
 
- 
   test "should update gymnasium" do
-    put :update, id: @gymnasium, gymnasium: { City: @gymnasium.City, Name: @gymnasium.Name, StreetAddress: @gymnasium.StreetAddress }
+    put :update, id: @gymnasium, gymnasium: { city: @gymnasium.city, country: @gymnasium.country, name: @gymnasium.name, street_address: @gymnasium.street_address }
     assert_redirected_to gymnasium_path(assigns(:gymnasium))
   end
 

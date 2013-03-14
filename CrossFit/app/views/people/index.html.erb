@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Dateofbirth</th>
+    <th>Date of birth</th>
     <th>Sex</th>
     <th>Address</th>
     <th>Height</th>
@@ -15,12 +15,12 @@
 
 <% @people.each do |person| %>
   <tr>
-    <td><%= person.Name %></td>
-    <td><%= person.DateOfBirth %></td>
-    <td><%= person.Sex %></td>
-    <td><%= person.Address %></td>
-    <td><%= person.Height %></td>
-    <td><%= person.Weight %></td>
+    <td><%= person.name %></td>
+    <td><%= person.date_of_birth %></td>
+    <td><%= person.sex %></td>
+    <td><%= person.address %></td>
+    <td><%= person.height %></td>
+    <td><%= person.weight %></td>
     <td><%= link_to 'Show', person %></td>
     <td><%= link_to 'Edit', edit_person_path(person) %></td>
     <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>

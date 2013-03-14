@@ -11,34 +11,64 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130311211110) do
+ActiveRecord::Schema.define(:version => 20130314193050) do
+
+  create_table "chosen_workouts", :force => true do |t|
+    t.integer  "name_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "chosen_workouts", ["name_id"], :name => "index_chosen_workouts_on_name_id"
 
   create_table "gymnasia", :force => true do |t|
-    t.string   "Name"
-    t.string   "StreetAddress"
-    t.string   "City"
+    t.string   "name"
+    t.string   "street_address"
+    t.string   "city"
+    t.string   "country"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "people", :force => true do |t|
+    t.string   "name"
+    t.date     "date_of_birth"
+    t.string   "sex"
+    t.string   "address"
+    t.integer  "height"
+    t.integer  "weight"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
 
-  create_table "people", :force => true do |t|
-    t.string   "Name"
-    t.date     "DateOfBirth"
-    t.string   "Sex"
-    t.string   "Address"
-    t.integer  "Height"
-    t.integer  "Weight"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+  create_table "users", :force => true do |t|
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
   end
 
-  create_table "wo_ds", :force => true do |t|
-    t.string   "Name"
-    t.string   "TimeNeeded"
-    t.integer  "NumberOfDaysPerWeek"
-    t.integer  "NumberOfExercises"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "workouts", :force => true do |t|
+    t.string   "name"
+    t.string   "workout_length"
+    t.integer  "number_of_days_per_week"
+    t.integer  "number_of_exercises"
+    t.integer  "creator_id_id"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
   end
+
+  add_index "workouts", ["creator_id_id"], :name => "index_workouts_on_creator_id_id"
 
 end

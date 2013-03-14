@@ -1,0 +1,14 @@
+class CreateWorkouts < ActiveRecord::Migration
+  def change
+    create_table :workouts do |t|
+      t.string :name
+      t.string :workout_length
+      t.integer :number_of_days_per_week
+      t.integer :number_of_exercises
+      t.references :creator_id
+
+      t.timestamps
+    end
+    add_index :workouts, :creator_id_id
+  end
+end

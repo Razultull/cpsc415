@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  workout_length: MyString
+  number_of_days_per_week: 1
+  number_of_exercises: 1
+  creator_id: 
+
+two:
+  name: MyString
+  workout_length: MyString
+  number_of_days_per_week: 1
+  number_of_exercises: 1
+  creator_id: 

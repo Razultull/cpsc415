@@ -15,36 +15,19 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 # encoding: utf-8
-Gymnasium.delete_all
-Gymnasium.create(:Name => "Gold's Gym",
-  :StreetAddress => "23 Crazy Street",    
-  :City => "Moscow")
-  
-  Gymnasium.create(:Name => "Ferris Athletic Center",
-  :StreetAddress => "300 Summit Street",    
-  :City => "Hartford")
-  
-  Gymnasium.create(:Name => "Brian's",
-  :StreetAddress => "1 Infinite Loop",    
-  :City => "Cupertino")
-  
-
-#---
-#:Name, :NumberOfDaysPerWeek, :NumberOfExercises, :TimeNeeded
-#---
-
-WoD.delete_all
-WoD.create(:Name => "Elliptical Burn", 
-           :NumberOfDaysPerWeek => 7, 
-           :NumberOfExercises => 5,
-           :TimeNeeded => "1 hour")
-          
-WoD.create(:Name => "Fat Burner", 
-           :NumberOfDaysPerWeek => 5, 
-           :NumberOfExercises => 7,
-           :TimeNeeded => "90 Minutes")
-
-WoD.create(:Name => "Mega Man Abs", 
-           :NumberOfDaysPerWeek => 3, 
-           :NumberOfExercises => 12,
-           :TimeNeeded => "35 hour")
+#:name, :number_of_days_per_week, :number_of_exercises, :workout_length
+Workout.delete_all
+Workout.create(:name => "Elliptical Burn", 
+           :number_of_days_per_week => 7, 
+           :number_of_exercises => 5,
+           :workout_length => "1 hour")
+# . . .
+Workout.create(:name => "Fat Burner", 
+           :number_of_days_per_week => 5, 
+           :number_of_exercises => 5,
+           :workout_length => "90 Minutes")
+# . . .
+Workout.create(:name => "Mega Man Abs", 
+           :number_of_days_per_week => 3, 
+           :number_of_exercises => 12,
+           :workout_length => "35 Minutes")

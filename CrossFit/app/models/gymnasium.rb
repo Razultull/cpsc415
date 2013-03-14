@@ -1,6 +1,6 @@
 class Gymnasium < ActiveRecord::Base
-  attr_accessible :City, :Name, :StreetAddress
-  validates :City, :Name, :StreetAddress, :presence=>true
-  validates :Name, :uniqueness=>true
+  attr_accessible :city, :country, :name, :street_address
+  validates :city, :country, :name, :street_address, :presence=>true
+  validates :name, :uniqueness=> true
   has_many :people, inverse_of: :Gymnasium
 end

@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  Name: MyString
-  DateOfBirth: 2013-03-11
-  Sex: MyString
-  Address: MyString
-  Height: 1
-  Weight: 1
+  name: MyString
+  date_of_birth: 2013-03-14
+  sex: MyString
+  address: MyString
+  height: 1
+  weight: 1
 
 two:
-  Name: MyString
-  DateOfBirth: 2013-03-11
-  Sex: MyString
-  Address: MyString
-  Height: 1
-  Weight: 1
+  name: MyString
+  date_of_birth: 2013-03-14
+  sex: MyString
+  address: MyString
+  height: 1
+  weight: 1

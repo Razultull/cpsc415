@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @workout.name %>
+</p>
+
+<p>
+  <b>Workout length:</b>
+  <%= @workout.workout_length %>
+</p>
+
+<p>
+  <b>Number of days per week:</b>
+  <%= @workout.number_of_days_per_week %>
+</p>
+
+<p>
+  <b>Number of exercises:</b>
+  <%= @workout.number_of_exercises %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @workout.creator_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_workout_path(@workout) %> |
+<%= link_to 'Back', workouts_path %>

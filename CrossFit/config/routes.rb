@@ -1,14 +1,17 @@
 CrossFit::Application.routes.draw do
-  devise_for :users
-
-  resources :wo_ds
-
-
   resources :gymnasia
+
+
+  resources :chosen_workouts
+
+
+  resources :workouts
 
 
   resources :people
 
+
+  devise_for :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,3 @@
+class Gymnasium < ActiveRecord::Base
+  attr_accessible :city, :country, :name, :street_address
+end

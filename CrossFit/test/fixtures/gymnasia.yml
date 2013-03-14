@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  Name: MyString
-  StreetAddress: MyString
-  City: MyString
+  name: MyString
+  street_address: MyString
+  city: MyString
+  country: MyString
 
 two:
-  Name: MyString
-  StreetAddress: MyString
-  City: MyString
+  name: MyString
+  street_address: MyString
+  city: MyString
+  country: MyString

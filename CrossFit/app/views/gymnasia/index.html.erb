@@ -1,28 +1,29 @@
-<div id = "Gymnasia_List">
-
-<h1>Listing Gymnasia</h1>
+<h1>Listing gymnasia</h1>
 
 <table>
+  <tr>
+    <th>Name</th>
+    <th>Street address</th>
+    <th>City</th>
+    <th>Country</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
 <% @gymnasia.each do |gymnasium| %>
-  <tr class= "<%=cycle('list_line_odd', 'list_line_even')%>">
-    <td class= "list_description">
-    	<dl>
-    		<dt><%= gymnasium.Name %></dt>
-    		<dd><%= gymnasium.StreetAddress %></td>
-    		<dd><%= gymnasium.City %></td>
-    	</dl>
-    </td>
+  <tr>
+    <td><%= gymnasium.name %></td>
+    <td><%= gymnasium.street_address %></td>
+    <td><%= gymnasium.city %></td>
+    <td><%= gymnasium.country %></td>
+    <td><%= link_to 'Show', gymnasium %></td>
+    <td><%= link_to 'Edit', edit_gymnasium_path(gymnasium) %></td>
+    <td><%= link_to 'Destroy', gymnasium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
 
-    	<td class= "list_actions">
-    		<%= link_to 'Show', gymnasium %><br/>
-    		<%= link_to 'Edit', edit_gymnasium_path(gymnasium) %><br/>
-    		<%= link_to 'Destroy', gymnasium, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
-  		</td>
- </tr>
-
-	<% end %>
-	</table>
-</div>
 <br />
 
 <%= link_to 'New Gymnasium', new_gymnasium_path %>
