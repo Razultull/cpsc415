@@ -1,0 +1,31 @@
+<h1>Listing workouts</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Workout length</th>
+    <th>Number of days per week</th>
+    <th>Number of exercises</th>
+    <th>Creator</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @workouts.each do |workout| %>
+  <tr>
+    <td><%= workout.name %></td>
+    <td><%= workout.workout_length %></td>
+    <td><%= workout.number_of_days_per_week %></td>
+    <td><%= workout.number_of_exercises %></td>
+    <td><%= workout.creator_id %></td>
+    <td><%= link_to 'Show', workout %></td>
+    <td><%= link_to 'Edit', edit_workout_path(workout) %></td>
+    <td><%= link_to 'Destroy', workout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Workout', new_workout_path %>

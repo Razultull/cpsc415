@@ -1,0 +1,30 @@
+<div id="product_list">
+	<h1>Listing Workouts</h1>
+
+	
+	<table>
+	<% @workouts.each do |workout| %>
+  		<tr class ="<%= cycle('list_line_odd)', 'list_line_even') %>">
+    		<td class = "list_description">
+    			<td><%= workout.name %></td>
+    			<td><%= workout.workout_length %></td>
+    			<td><%= workout.number_of_days_per_week %></td>
+    			<td><%= workout.number_of_exercises %></td>
+    			<td><%= workout.creator_id %></td>
+    
+    		</td>
+    		
+    		<td class= "list_actions">
+    			
+    			<td><%= link_to 'Show', workout %></td>
+    			<td><%= link_to 'Edit', edit_workout_path(workout) %></td>
+   				<td><%= link_to 'Destroy', workout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  			</td>	
+  		</tr>
+  		
+	<% end %>
+	</table>
+</div>
+<br />
+
+<%= link_to 'New Workout', new_workout_path %>
